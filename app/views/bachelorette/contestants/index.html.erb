@@ -1,0 +1,6 @@
+<h1><%= "Hannah Brown's Season 15 - Contestants"%></h1>
+<% @contestants.each do |contestant| %>
+  <p>Name: <%= link_to contestant.name, contestant_path(contestant.id) %></p>
+  <p>Age: <%= contestant.age %></p>
+  <p>Hometown: <%= contestant.hometown %></p>
+<% end %>
